@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP Confirmation</title>
+    <style>
+        .lw.event.registration.success {
+            display: block;
+            text-align: center;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0;
+            font-family: Circular-Book, Arial, Helvetica, sans-serif;
+            color: #008672;
+            background: rgba(0, 134, 114, 0.05);
+            border: 1px solid rgba(0, 134, 114, 0.25);
+            border-radius: 4px;
+            font-size: 1rem;
+            line-height: 1.5;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+            animation: fadeIn 0.5s ease-in-out;
+        }
+
+        .lw.event.registration.success::before {
+            content: "\2713";
+            margin-right: 4px;
+            font-weight: bold;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-4px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <span class="lw event registration success" aria-live="assertive">
+        Thank you for registering for <strong>Brown Family Storytime</strong>
+    </span>
+
+</body>
+
+</html>
